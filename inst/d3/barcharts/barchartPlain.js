@@ -1,3 +1,5 @@
+
+
 let xScale = d3
   .scaleBand()
   .domain(d3.range(data.length))
@@ -15,6 +17,17 @@ svg.style('background-color', options.bgColor)
   .data(data)
   .enter()
   .append("rect")
+  .sort(function(a, b) {
+
+    if (options.sort === "none") {
+      return null
+    } else if (options.sort === "ascending") {
+      return d3.ascending(a, b)
+    } else {
+      return d3.descending(a, b)
+    }
+
+  })
   .attr("x", (d, i) => xScale(i))
   .attr("y", (d) => height - yScale(d))
   .attr("width", xScale.bandwidth())

@@ -5,6 +5,7 @@ plainBar <- function(data,
                      strokeColor = "purple",
                      strokeWidth = 2,
                      barPadding = 0.1,
+                     sort = "none",
                      width = NULL,
                      height = NULL
                     ) {
@@ -21,7 +22,8 @@ plainBar <- function(data,
       barPadding = barPadding,
       bgColor = bgColor,
       strokeColor = strokeColor,
-      strokeWidth = strokeWidth
+      strokeWidth = strokeWidth,
+      sort = sort
       )
   )
 }
