@@ -1,5 +1,5 @@
 
-plainBar <- function(data,
+plainBarA <- function(data,
                      color = "crimson",
                      width = NULL,
                      height = NULL,
@@ -10,13 +10,13 @@ plainBar <- function(data,
 
   r2d3::r2d3(
     data = data,
-    script = system.file("d3/barcharts/barchartPlain.js", package = "DScript"),
+    script = system.file("d3/barcharts/barchartPlainA.js", package = "DScript"),
     width = width,
     height = height,
     options = list(
       color = color,
       barPadding = barPadding,
       bgColor = bgColor
-      )
+    )
   )
 }
