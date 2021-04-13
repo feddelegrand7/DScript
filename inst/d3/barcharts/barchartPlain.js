@@ -20,6 +20,7 @@ svg.style('background-color', options.bgColor)
   .attr("width", xScale.bandwidth())
   .attr("height", (d) => yScale(d))
   .attr("fill", options.color)
-  .attr("stroke", "darkred");
+  .attr("stroke", options.strokeColor)
+  .attr("stroke-width", options.strokeWidth);
 
 

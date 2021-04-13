@@ -1,10 +1,12 @@
 
 plainBarA <- function(data,
                      color = "crimson",
-                     width = NULL,
-                     height = NULL,
+                     bgColor = "#FFFFFF",
+                     strokeColor = "purple",
+                     strokeWidth = 2,
                      barPadding = 0.1,
-                     bgColor = "#FFFFFF") {
+                     width = NULL,
+                     height = NULL) {
 
 
 
@@ -16,7 +18,9 @@ plainBarA <- function(data,
     options = list(
       color = color,
       barPadding = barPadding,
-      bgColor = bgColor
+      bgColor = bgColor,
+      strokeColor = strokeColor,
+      strokeWidth = strokeWidth
     )
   )
 }
