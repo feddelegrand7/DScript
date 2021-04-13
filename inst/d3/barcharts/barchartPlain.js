@@ -11,7 +11,7 @@ let yScale = d3
   .domain([0, d3.max(data)])
   .range([0, height]);
 
-svg.attr('id', 'mysvg')
+svg.style('background-color', options.bgColor)
   .selectAll("rect")
   .data(data)
   .enter()
